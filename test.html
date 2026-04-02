@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        border: 0;
+        outline: 0;
+    }
+    .container{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-wrapper{
+        display: flex;
+        border: 1px solid #ccc;    
+        border-radius: 6px;        
+        background-color: white;  
+    }
+    .prefix,
+    .suffix{
+        display: flex;
+        align-items: center;
+        background-color: #f0f0f0;
+        color: #666;
+        font-weight: bold;
+        padding: 12px 16px;
+    }
+    .input-wrapper input{
+        padding: 12px 16px;  
+        flex: 1;                      
+        font-size: 16px; 
+    }
+    .input-wrapper:focus-within{
+        border: 1px solid orange;
+    }
+    .input-wrapper:focus-within .prefix,
+    .input-wrapper:focus-within .suffix{
+        background-color: rgba(255, 213, 134, 0.959);
+    }
+</style>
+<body>
+    <!-- Create a temperature converter -->
+    <div class="container">
+        <div class="input-wrapper">
+            <span class="prefix">🌡️</span>
+            <input type="number" placeholder="Enter temperature">
+            <span class="suffix">°C</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- Css -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+</head>
+<body> 
+    <div class="wrapper">
+      <div class="container">
+        <div class="calculator-section">
+          <div class="calc-head-section">
+            <h3 class="calc-heading">Mortgage Calculator</h3>
+            <button class="heading-clear-btn" type="submit">Clear All</button>
+          </div>
+          <form class="calculator-form">
+            <label for="mtgAmount" class="calc-label">Mortgage Amount</label>
+            <div class="form-group input-wrapper">
+              <span class="prefix">£</span>
+              <input type="text" name="" id="mtgAmount" class="calc-amount-input">
+            </div>
+            <div class="form-group calc-rate-term">
+              <div class="mtg-term-container">
+                <label for="mtgTerm" class="calc-label">Mortgage Term</label>
+                <div class="mtg-term-wrapper input-wrapper">
+                  <input type="text" name="" id="mtgTerm" class="calc-input">
+                  <span class="suffix">years</span>
+                </div>
+              </div>
+              <div class="mtg-rate-container">
+                <label for="mtgIntreset" class="calc-label">Interest Rate</label>
+                <div class="mtg-rate-wrapper input-wrapper">
+                  <input type="text" name="" id="mtgIntreset" class="calc-input">
+                  <span class="suffix">%</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group option-grp">
+              <p class="calc-label">Mortgage Type</p>
+              <label for="mtgType-Repay" class="radio-grp">
+                <input type="radio" name="type" id="mtgType-Repay"/>
+                <span>Repayment</span>
+              </label>
+              <label for="mtgType-Intrest" class="radio-grp">
+                <input type="radio" name="type" id="mtgType-Intrest"/>
+                <span>Interest Only</span>
+              </label>
+            </div>
+            <div class="submit-btn-container">
+              <img src="/assets/images/icon-calculator.svg" alt="">
+              <button class="calc-submit-btn" type="submit">Calculate Repayments</button>
+            </div>
+          </form>
+        </div>
+        <div class="result-section">
+          <div class="illustration-container">
+            <img src="assets/images/illustration-empty.svg" alt="">
+          </div>
+          <div class="result-info-block">
+            <h3 class="result-info-heading">
+              Results shown here
+            </h3>
+            <p class="result-info-text">
+              Complete the form and click “calculate repayments” to see what your monthly repayments would be.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <script src="script.js"></script>
+</body>
+</html>
