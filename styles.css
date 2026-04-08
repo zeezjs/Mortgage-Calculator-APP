@@ -53,7 +53,7 @@ body{
 }
 .container{
     width: 920px;
-    height: 540px;
+    height: fit-content;
     background-color: var(--Neutral-White);
     border-radius: 20px;
     display: flex;
@@ -98,14 +98,6 @@ body{
 .form-group{
     margin-bottom: 24px;
 }
-/* input{
-    font-size: 16px;
-    padding: 12px 16px;
-    border: 1px solid var(--Slate-500);
-    color: var(--Slate-900);
-    font-weight: 700;
-    border-radius: 6px;
-} */
 .calc-rate-term{
     display: flex;
     gap: 24px;
@@ -139,6 +131,10 @@ body{
 .radio-grp:has(input:checked){
     border: 1px solid var(--prim-lime);
     background-color: rgba(216, 219, 47, 0.1);
+}
+.radio-grp{
+    transition: background-color 0.2s ease;
+    transition: border 0.2s ease;
 }
 /* Input adornments */
 .input-wrapper{
@@ -175,7 +171,6 @@ body{
     display: flex;
     align-items: center;
     padding: 0 16px;
-    /* position: relative; */
     color: var(--Slate-700);
     background-color: var(--Slate-100);
     font-weight: 700;
@@ -183,6 +178,10 @@ body{
 }
 .input-wrapper{
     padding: 0;
+}
+.prefix,
+.suffix{
+    transition: background-color 0.2s ease;
 }
 /* Buttons */
 .heading-clear-btn{
@@ -210,12 +209,14 @@ body{
     cursor: inherit;
 }
 /* Result Section */
-.result-section{
+.result-section-empty{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
+/* Empty */
 .result-info-block{
     display: flex;
     flex-direction: column;
@@ -229,4 +230,53 @@ body{
     font-weight: lighter;
     width: 400px;
     font-size: 14px;
+}
+.illustration-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Completed */
+.result-section-completed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+.result-info-section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.result-answer-section{
+    background-color: hsl(202, 85%, 10%);
+    border-top: 3px solid var(--prim-lime);
+    border-radius: 4px;
+    width: 100%;
+    height: fit-content;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.result-type-answer{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.result-term{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+hr{
+    border: 0.5px solid var(--Neutral-White);
+}
+.result{
+    padding: 0 4px;
+    font-size: 48px;
+    color: var(--prim-lime);
+}
+.text-complete{
+    text-align: left;
 }
