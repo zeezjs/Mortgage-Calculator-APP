@@ -280,3 +280,10 @@ hr{
 .text-complete{
     text-align: left;
 }
+/* Error styles */
+.error{
+    color: var(--error);
+    font-size: 12px;
+    font-weight: bolder;
+    display: none;
+}
