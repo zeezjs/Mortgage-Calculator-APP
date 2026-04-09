@@ -12,7 +12,7 @@ This is a solution to the [Mortgage repayment calculator challenge on Frontend M
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [AI Collaboration](#ai-collaboration)
+- [AI Collaboration](#ai-collaboration)
 - [Author](#author)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
