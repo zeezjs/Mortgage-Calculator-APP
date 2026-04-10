@@ -145,5 +145,5 @@ mtgAmount.addEventListener("input", e=>{
 ## Author
 
 - Website - [Hamed Azeez](https://github.com/zeezjs)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/zeezjs)
-- Twitter - [@yourusername](https://www.x.com/thezeezdesign)
+- Frontend Mentor - [@zeezjs](https://www.frontendmentor.io/profile/zeezjs)
+- Twitter - [@thezeezdesign](https://www.x.com/thezeezdesign)
