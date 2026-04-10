@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/zeezjs/Mortgage-Calculator-APP.git)
+- Live Site URL: [Live site URL](https://mortgage-calculator-app-five.vercel.app/)
 
 ## My process
 
@@ -58,7 +58,7 @@ Users should be able to:
 
 Html and css
 - learnt more about containers and box model (padding, and also borders in particular)
-- learn't how to add prefixs and suffixs to input fields
+- learnt how to add prefixs and suffixs to input fields
 
 JavaScript
 - understood the dom and how to manipulate it better
@@ -117,19 +117,24 @@ JavaScript
 ```js
 const format = rawValue =>{
     let value = rawValue.replace(/[^\d.]/g, "").replace(/(\...*)\./g, '$1');
-    //console.log(value)
     if(!value){
      return "";  
     };
     return Number(value).toLocaleString();
 };
+mtgAmount.addEventListener("input", e=>{
+    let amountValue = e.target.value;
+    e.target.value = format(amountValue);
+    filteredAmount = Number(format(amountValue).replace(/,/g, ""));
+    return filteredAmount;
+});
 ```
 
 
 ### Continued development
 
 - validating user inputs
-- 
+- Mobile-Resposiveness
 
 
 ### AI Collaboration
@@ -139,9 +144,6 @@ const format = rawValue =>{
 
 ## Author
 
-- Website - [Hamed Azeez](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
+- Website - [Hamed Azeez](https://github.com/zeezjs)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/zeezjs)
+- Twitter - [@yourusername](https://www.x.com/thezeezdesign)
